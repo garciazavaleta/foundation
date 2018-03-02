@@ -1,5 +1,50 @@
+/*
+//
+//
+//
+DOM
+*/
 body{
   background: url("../img/papel_picado.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+/*
+//
+//
+//
+ids
+*/
+#encabezado div{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#encabezado, #mainCont{
+  max-width: 900px;
+}
+#mainCont div{
+  padding: 10px;
+}
+#mainCont, #encabezado{
+  margin: 0 auto;
+  background-color: rgba(255, 0, 255, 0.7);
+}
+#titulo{
+  color: white;
+  text-align: right;
+  border-right: solid;
+  border-width: 1px;
+  border-color: white;
+}
+/*
+/
+/
+/
+queries
+*/
+@media screen and (max-width: 767px){
+
+}
+@media screen and (max-width: 580px){
 }
