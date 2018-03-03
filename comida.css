@@ -8,6 +8,7 @@ body{
   background: url("../img/papel_picado.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
+  color: white;
 }
 form{
   margin: 0 !important;
@@ -25,6 +26,16 @@ input{
 //
 //
 //
+classes
+*/
+.apagador{
+  margin-bottom: 0px;
+  padding: 0;
+}
+/*
+//
+//
+//
 ids
 */
 #busqueda div {
@@ -35,7 +46,6 @@ ids
   margin-left: : 0 auto;
 }
 #contIzq{
-
   color: white;
 }
 #encabezado div{
@@ -44,6 +54,8 @@ ids
 }
 #encabezado, #mainCont{
   max-width: 900px;
+}
+#galeria{
 }
 #mainCont div{
   padding: 10px;
@@ -97,10 +109,65 @@ queries
   }
 }
 @media screen and (max-width: 639px){
+  #colIzq, #contIzq, #menu{
+    padding: 0 !important;
+  }
+  #galeria, #galeriaR1, #galeriaR2, #historial{
+    display: none;
+  }
   #titulo{
     font-size: 10px;
   }
-  #colIzq{
-    
-  }
+}
+/*
+/
+/
+/
+lista
+*/
+
+.list-group {
+  margin-bottom: 1rem;
+  /*border: 1px solid #e6e6e6;
+  border-radius: 0;
+  background: #fefefe;*/
+  box-shadow: none;
+  overflow: hidden;
+  color: white;
+  font-size: 12px;
+}
+
+.list-group > :last-child {
+  margin-bottom: 0;
+}
+
+.list-group-item {
+  /*padding: 1rem;*/
+  padding: 5px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.list-group-item > :last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.list-group-item.active {
+  color: #fefefe;
+  background-color: #1779ba;
+  border-color: 1px solid #1779ba;
+}
+
+.list-group-item:hover, .list-group-item:focus {
+  background-color: rgba(255, 0, 255, 0.4);
+}
+
+.list-group-item:hover.active, .list-group-item:focus.active {
+  background-color: #1779ba;
+}
+
+.list-group-item.disabled, .list-group-item.disabled:hover, .list-group-item.disabled:focus, .list-group-item[disabled], .list-group-item[disabled]:hover, .list-group-item[disabled]:focus {
+  color: #8a8a8a;
+  cursor: not-allowed;
+  background-color: #fefefe;
 }

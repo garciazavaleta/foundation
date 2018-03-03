@@ -42,13 +42,13 @@
           <!--
           columna izquierda
           -->
-            <div class="column small-4 medium-4 large-4" id="colIzq">
+            <div class="column small-12 medium-4 large-4" id="colIzq">
               <!--
               búsqueda
               -->
               <div id="contIzq">
-                <div class="row" id="busqueda">
-                    <div class="column small-10 medium-11 large-11">
+                <div class="row small-stack" id="busqueda">
+                  <div class="column small-10 medium-11 large-11">
                     <form>
                       <input type="text" placeholder="buscar">
                     </form>
@@ -60,15 +60,18 @@
                 <!--
                 menú
                 -->
-                <div class="row" id="menu">
-                  <ul class="vertical menu">
-                    <li><a href="#">One</a></li>
-                    <li><a href="#">Two</a></li>
-                    <li><a href="#">Three</a></li>
-                    <li><a href="#">Four</a></li>
+                <div class="row apagador" data-responsive-toggle = "menu1" hide-for = "small" id="cajaApagador">
+                  <button class = "menu-icon" type = "button" data-toggle id="botApagador"></button>
+                </div>
+                <div class="row" id="menu" >
+                  <ul class="vertical menu" id="menu1">
+                    <li><a href="#">La cocina mexicana</a></li>
+                    <li><a href="#">Paseo por nuestra gastronomía</a></li>
+                    <li><a href="#">Las delicias de Oaxaca</a></li>
+                    <li><a href="#">Michoacán y sus tradiciones</a></li>
                   </ul>
                 </div>
-              </div>
+
               <!--
               galeria
             -->
@@ -99,13 +102,28 @@
                   <a href="#"><img class="thumbnail" src="img/com06.jpg" alt=""></a>
                 </div>
               </div>
+              <!--
+              historial
+              -->
+              <div class="row" id="historial">
+                <div class="column smal-12 medium-12 large-12">
+                  <h5>HISTORIAL</h5>
+                  <ul class="list-group">
+                    <li class="list-group-item">Pozole blanco</li>
+                    <li class="list-group-item">Picadillo verde con setas</li>
+                    <li class="list-group-item">Crema de chile poblano</li>
+                    <li class="list-group-item">Carnitas</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <!--
-            columna derecha
-            -->
-            <div class="column small-12 medium-8 large-8" style="background-color:red">
-              receta
-            </div>
+          </div>
+          <!--
+          columna derecha
+          -->
+          <div class="column small-12 medium-8 large-8" style="background-color:red">
+            receta
+          </div>
         </article>
       </div>
     </section>
@@ -115,6 +133,7 @@
     <!--
     scripts
     -->
+
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
