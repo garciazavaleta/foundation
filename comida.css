@@ -9,13 +9,35 @@ body{
   background-size: cover;
   background-attachment: fixed;
 }
-
+form{
+  margin: 0 !important;
+  padding: 0 !important;
+  display: inline;
+}
+input{
+  font-size: 12px !important;
+  height: 18px !important;
+  border-radius: 3px !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
 /*
 //
 //
 //
 ids
 */
+#busqueda div {
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+#colIzq{
+  margin-left: : 0 auto;
+}
+#contIzq{
+
+  color: white;
+}
 #encabezado div{
   margin-top: 15px;
   margin-bottom: 15px;
@@ -28,7 +50,33 @@ ids
 }
 #mainCont, #encabezado{
   margin: 0 auto;
-  background-color: rgba(255, 0, 255, 0.7);
+  background-color: rgba(255, 0, 255, 0.6);
+}
+#menu{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#menu li{
+  background-color: rgba(255, 255, 255, 0.6);
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: #ff00ff;
+  font-size: 12px;
+}
+#menu li a{
+  color: white;
+}
+#menu li a:hover{
+  color: #ff00ff;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#titGaleria{
+  border-bottom: 1px;
+  border-bottom-style: dotted;
+  border-bottom-color: white;
+  color: white;
+  text-align: center;
 }
 #titulo{
   color: white;
@@ -44,7 +92,15 @@ ids
 queries
 */
 @media screen and (max-width: 767px){
-
+  #titulo{
+    font-size: 12px;
+  }
 }
-@media screen and (max-width: 580px){
+@media screen and (max-width: 639px){
+  #titulo{
+    font-size: 10px;
+  }
+  #colIzq{
+    
+  }
 }
