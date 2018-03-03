@@ -11,9 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.css" integrity="sha256-IHU5CkoOGpVMODA9ql3Lz609uhGwwFlLNSpAMoOY2us=" crossorigin="anonymous" />
 
     <!-- foundation-rtl.css: Compressed CSS with right-to-left reading direction -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-rtl.min.css" integrity="sha256-Az+E7JXW71Srarkum5QPTdnobddg2GqI1i8+nMusgLk=" crossorigin="anonymous" />
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-rtl.min.css" integrity="sha256-Az+E7JXW71Srarkum5QPTdnobddg2GqI1i8+nMusgLk=" crossorigin="anonymous" />-->
+    <link rel="stylesheet" href="css/foundation-rtl.css"/>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- Insert this within your head tag and after foundation.css -->
+    <link rel="stylesheet" href="css/motion-ui.css" />
+
+
 
     <link rel="stylesheet" href="css/comida.css" />
     <title>La deliciosa y sorprendente comida mexicana</title>
@@ -121,8 +125,150 @@
           <!--
           columna derecha
           -->
-          <div class="column small-12 medium-8 large-8" style="background-color:red">
-            receta
+        </article>
+        <article>
+          <div class="column small-12 medium-8 large-8" id="colDer">
+            <!--
+            primera Receta
+            -->
+            <div class="row">
+              <div class="small-12 medium-12 large-12">
+                <h3 class="titReceta">Pozole Blanco</h3>
+                <span class="fecha">viernes, 2 de marzo</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column small-12 medium-9 large-9 fotoReceta"  id="carrousel">
+                  <!--
+                  Carrusel
+                -->
+                <div class="orbit" role="region" aria-label="Fotos de platillos" data-orbit>
+                  <div class="orbit-wrapper">
+                    <div class="orbit-controls">
+                      <button class="orbit-previous"><span class="show-for-sr">Anterior</span>&#9664;&#xFE0E;</button>
+                      <button class="orbit-next" id="correccion"><span class="show-for-sr">Siguiente</span>&#9654;&#xFE0E;</button>
+                    </div>
+                    <ul class="orbit-container">
+                      <li class="is-active orbit-slide">
+                        <figure class="orbit-figure">
+                          <img class="orbit-image" src="img/com01.jpg" alt="Space">
+                          <figcaption class="orbit-caption">Platillo 1</figcaption>
+                        </figure>
+                      </li>
+                      <li class="orbit-slide">
+                        <figure class="orbit-figure">
+                          <img class="orbit-image" src="img/com02.jpg" alt="Space">
+                          <figcaption class="orbit-caption">Platillo 2</figcaption>
+                        </figure>
+                      </li>
+                      <li class="orbit-slide">
+                        <figure class="orbit-figure">
+                          <img class="orbit-image" src="img/com03.jpg" alt="Space">
+                          <figcaption class="orbit-caption">Platillo 3</figcaption>
+                        </figure>
+                      </li>
+                      <li class="orbit-slide">
+                        <figure class="orbit-figure">
+                          <img class="orbit-image" src="img/com04.jpg" alt="Space">
+                          <figcaption class="orbit-caption">Platillo 4</figcaption>
+                        </figure>
+                      </li>
+                    </ul>
+                  </div>
+                  <nav class="orbit-bullets">
+                    <button class="is-active" data-slide="0"><span class="show-for-sr">Platillo 1.</span><span class="show-for-sr">Current Slide</span></button>
+                    <button data-slide="1"><span class="show-for-sr">Platillo 2.</span></button>
+                    <button data-slide="2"><span class="show-for-sr">Platillo 3.</span></button>
+                    <button data-slide="3"><span class="show-for-sr">Platillo 4.</span></button>
+                  </nav>
+                </div>
+                <!--
+                Termina Carrusel
+              -->
+              </div>
+              <div class="column small-12 medium-3 large-3 fichaIzq">
+                El pozole es un plato de México y Centroamérica, es una especie de caldo hecho a base de granos de maíz de un tipo conocido comúnmente como cacahuazintle, a la que se agrega, según la región, carne de pollo o de cerdo como ingrediente secundario.​
+              </div>
+            </div>
+            <div class="row">
+              <div class="column small-4 medium-3 large-3 fichaDer">
+                Pozole rojo al estilo Jalisco. El maíz pozolero pre cocido te ahorra muchísimo tiempo y esfuerzo. El color y sabor particular de este pozole se debe al uso del chile mirasol o guajillo.
+              </div>
+              <div class="column small-8 medium-9 large-9">
+                <h4>Ingredientes</h4>
+                Porciones: 8
+                1 kilo de maíz pozolero precocido
+                1 cabeza de ajo
+                Sal al gusto
+                1 kilo de carne de puerco, cortada en cubos
+                1 jitomate grande
+                100 gramos de chile mirasol (guajillo)
+                1 diente de ajo
+                1/4 cucharadita de orégano
+                1 pizca de cominos
+              </div>
+                <div class="row small-stack">
+                  <div class="column small-2 medium-2 large-2">
+                    <img src="img/persona.png">
+                  </div>
+                  <div class="column small-10 medium-10 large-10">
+                    <form>
+                      <textarea placeholder="escriba sus comentarios"></textarea>
+                    </form>
+                  </div>
+                </div>
+            </div>
+            <!--
+            segunda Receta
+            -->
+            <div class="row">
+              <div class="small-12 medium-12 large-12">
+                <h3 class="titReceta">Pozole Blanco</h3>
+                <span class="fecha">viernes, 2 de marzo</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column small-12 medium-3 large-3 fichaIzq">
+                El pozole es un plato de México y Centroamérica, es una especie de caldo hecho a base de granos de maíz de un tipo conocido comúnmente como cacahuazintle, a la que se agrega, según la región, carne de pollo o de cerdo como ingrediente secundario.​
+              </div>
+              <div class="column small-12 medium-9 large-9 fotoReceta"  id="carrousel">
+                  <!--
+                  Imagen
+                -->
+                <img src="img/com01.jpg">
+                <!--
+                Termina imagen
+              -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="column small-4 medium-3 large-3 fichaDer">
+                Pozole rojo al estilo Jalisco. El maíz pozolero pre cocido te ahorra muchísimo tiempo y esfuerzo. El color y sabor particular de este pozole se debe al uso del chile mirasol o guajillo.
+              </div>
+              <div class="column small-8 medium-9 large-9">
+                <h4>Ingredientes</h4>
+                Porciones: 8
+                1 kilo de maíz pozolero precocido
+                1 cabeza de ajo
+                Sal al gusto
+                1 kilo de carne de puerco, cortada en cubos
+                1 jitomate grande
+                100 gramos de chile mirasol (guajillo)
+                1 diente de ajo
+                1/4 cucharadita de orégano
+                1 pizca de cominos
+              </div>
+                <div class="row small-stack">
+                  <div class="column small-2 medium-2 large-2">
+                    <img src="img/persona.png">
+                  </div>
+                  <div class="column small-10 medium-10 large-10">
+                    <form>
+                      <textarea placeholder="escriba sus comentarios"></textarea>
+                    </form>
+                  </div>
+                </div>
+            </div>
           </div>
         </article>
       </div>

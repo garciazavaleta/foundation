@@ -32,6 +32,28 @@ classes
   margin-bottom: 0px;
   padding: 0;
 }
+.fecha, .fichaIzq, .fichaDer{
+  font-size: 10px;
+}
+.fichaIzq{
+  border-left: dotted;
+  border-left-width: 1px;
+  border-color: white;
+  padding-left: 15px !important;
+}
+.fichaDer{
+  border-right: dotted;
+  border-right-width: 1px;
+  border-color: white;
+  padding-right: 15px !important;
+}
+.fotoReceta{
+  padding-right: 15px !important;
+}
+.titReceta{
+  padding-bottom: 0;
+  margin-bottom: -10px;
+}
 /*
 //
 //
@@ -42,12 +64,34 @@ ids
   margin: 0 auto !important;
   padding: 0 !important;
 }
+#carrousel{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+#carrousel div, #carrousel nav{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+#colDer{
+  border-left: solid;
+  border-color: white;
+  border-width: 1px;
+}
+#colDer img{
+  width: 100%;
+}
 #colIzq{
   margin-left: : 0 auto;
 }
 #contIzq{
   color: white;
 }
+/*#correccion{
+  right: 0 !important;
+  left: auto !important;
+}
+*/
 #encabezado div{
   margin-top: 15px;
   margin-bottom: 15px;
@@ -55,7 +99,9 @@ ids
 #encabezado, #mainCont{
   max-width: 900px;
 }
-#galeria{
+#galeriaR1, #galeriaR2, #galeriaR1 div, #galeriaR2 div, #galeriaR1 img, #galeriaR2 img{
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
 #mainCont div{
   padding: 10px;
